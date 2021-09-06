@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from './styles';
-import {renderIcon, IconTypes} from '../../icon'
+import { renderIcon, IconTypes } from '../../icon'
 
 type PrimaryProps = React.HTMLProps<HTMLButtonElement> & {
   icon?: IconTypes
 }
 
-export const PrimaryButton: React.FC<PrimaryProps> = ({onClick, icon, children}) => {
+export const Secondary: React.FC<PrimaryProps> = ({onClick, icon, children}) => {
   return (
   <Container>
     <button onClick={onClick}>

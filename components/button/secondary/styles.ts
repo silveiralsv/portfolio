@@ -3,7 +3,7 @@ import {darken} from 'polished'
 
 export const Container = styled.div`
   button {
-    background-color: var(--green-600);
+    background-color: var(--gray-600);
     color: var(--white);
     font-weight: 700;
     
@@ -19,7 +19,7 @@ export const Container = styled.div`
     }
 
     &:hover {
-      background-color: ${darken(0.1, '#49AB6C')};
+      background-color: ${darken(0.1, '#7A748E')};
     }
 
     transition: background-color, 0.2s;
