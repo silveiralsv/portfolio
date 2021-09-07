@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+
+  
 }
 
 @media (max-width: 1080px){
@@ -71,6 +73,7 @@ body, input, textarea, select, button {
 body {
   background: var(--gray-1000);
   color: var(--white);
+  overflow-y: hidden
 }
 
 button {
