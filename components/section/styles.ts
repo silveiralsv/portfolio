@@ -1,24 +1,22 @@
+import { Carousel } from 'antd'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  overflow-y: scroll;
-  height: max-content;
-
   width: 100vw;
   height: 100vh;
 
-  ::-webkit-scrollbar {
-  width: 10px;
-  
-  
-  
-}
+  .slick-dots, .slick-dots-left {
+    button {
+      background: var(--gray-600) !important;
+    }
+    
+    .slick-active{
+      button {
+        background: var(--gray-400) !important;
+      }
+    }
 
-::-webkit-scrollbar-track {
-  background: red;
-}
-
-
+  }
 `
 
 

@@ -6,6 +6,7 @@ export const Container = styled.div`
   height: 100vh;
   h1 {
     font-size: 5rem;
+    color: var(--white)
   }
 
   span {
