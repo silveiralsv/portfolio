@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import {Section} from '../components'
+import {HomePage} from '../components/section/about'
 
 const Home: NextPage = () => {
   return (
     <main>
-      <Section/>
+      <HomePage/>
     </main>
   )
 }

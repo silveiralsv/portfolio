@@ -71,7 +71,6 @@ body, input, textarea, select, button {
 body {
   background: var(--gray-1000) !important;
   color: var(--white) !important;
-  overflow-y: hidden
 }
 
 button {
@@ -82,8 +81,14 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+  
 }
 
 * {
   box-sizing: border-box;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
 }

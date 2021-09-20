@@ -9,7 +9,7 @@ export const Container = styled.div`
     
     border: 0;
     border-radius: 4px;
-    padding: 16px 147px;
+    padding: 16px 100px;
 
     display: flex;
     align-items: center;

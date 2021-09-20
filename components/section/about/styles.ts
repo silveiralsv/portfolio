@@ -14,3 +14,16 @@ export const Container = styled.div`
     color: var(--gray-500)
   }
 `
+
+export const ButtonsContainer = styled.div`
+margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .about-primary, .about-secondary {
+    width: 45% !important;
+  }
+  
+`
+
