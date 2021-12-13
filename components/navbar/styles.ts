@@ -18,7 +18,6 @@ export const Container = styled.div`
   z-index: 1;
   transition: 0.5s;
   white-space: nowrap;
-  overflow-x: hidden;
 `;
 
 type IPageSpacer = {

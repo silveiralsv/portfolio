@@ -1,12 +1,16 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import { About } from '../components/about'
 
-import {Section} from '../components'
+import { HomeSection } from '../components/home'
 
 const Home: NextPage = () => {
   return (
-    <main>
-      <Section/>
+    <main >
+      <div style={{height: '100vh', overflow: 'auto'}}>
+
+      <HomeSection />
+      <About />
+      </div>
     </main>
   )
 }
