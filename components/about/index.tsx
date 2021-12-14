@@ -38,16 +38,16 @@ export const About: React.FC = () => {
       </Typography>
 
       </Container>
-      <Grid container spacing={0.5} sx={{ position: 'sticky', mt: '-10%', px: 5, height: 'fit-content'}}>
+      <Grid container spacing={2} sx={{ position: 'sticky', mt: '-10%', px: 5}}>
         <Grid item xs={4} sx={{display: 'flex'}}>
-          <Card  sx={{display: 'flex', flexDirection: 'column'}}>
+          <Card  sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="div"
               sx={{
-                p: 5,
+                p: {md: 3, xs: 1},
                 display: "flex",
                 justifyContent: "center",
-                "& svg": { height: "60px", width: "60px" },
+                "& svg": { height: "10rem", width: "10rem" },
               }}
             >
               <FaReact color="#153d65" />
@@ -93,11 +93,11 @@ export const About: React.FC = () => {
             <CardMedia
               component="i"
               sx={{
-                p: 5,
+                p: {md: 3, xs: 1},
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                "& svg": { height: "60px", width: "60px" },
+                "& svg": { height: "10rem", width: "10rem" },
               }}
             >
               <FaNode color="#153d65" />
@@ -135,21 +135,21 @@ export const About: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4}>
-          <Card sx={{height: '100%'}}>
+        <Grid item xs={4} sx={{display: 'flex'}}>
+          <Card sx={{display: 'flex', flexDirection: 'column'}}>
             <CardMedia
               component="i"
               sx={{
-                p: 5,
+                p: {md: 3, xs: 1},
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                "& svg": { height: "60px", width: "60px" },
+                "& svg": { height: "10rem", width: "10rem" },
               }}
             >
               <FaMobileAlt color="#153d65" />
             </CardMedia>
-            <CardContent>
+            <CardContent sx={{display: 'flex', flexDirection: 'column', justifyContent:"space-between", height: "100%"}}>
             <Container sx={{px: '0 !important', mb: '5rem'}}> 
             
               <Typography
