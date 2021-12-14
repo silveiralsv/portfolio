@@ -2,7 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
 
@@ -71,7 +70,7 @@ body, input, textarea, select, button {
 }
   
 body {
-  background: #181a1b;
+  background: #0a1929;
   color: var(--white);
 }
 
