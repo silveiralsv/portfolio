@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-
-  
 }
+
 
 @media (max-width: 1080px){
   html {
@@ -71,9 +70,8 @@ body, input, textarea, select, button {
 }
   
 body {
-  background: var(--gray-1000);
+  background: #0a1929;
   color: var(--white);
-  overflow-y: hidden
 }
 
 button {
@@ -82,10 +80,12 @@ button {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }

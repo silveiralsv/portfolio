@@ -1,15 +1,12 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Header, Topbar } from '../components'
-import Head from 'next/head'
+import '../styles/globals.css'
+import { NavHeader } from '../components/navheader';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return  (
     <>
-    <Header/>
-    <Topbar/> 
+    <NavHeader />
     <Component {...pageProps} />    
-    
     </>
   )
 }
