@@ -30,7 +30,7 @@ export const NavHeader: React.FC = () => {
     <HideOnScroll>
     <AppBar  position="fixed" style={{background: '#0c2034'}}>
       
-      <Container maxWidth="xl" sx={{display: 'flex', padding: '5px 0'}}>
+      <Container maxWidth="xl" sx={{display: 'flex', p: {xs: '5px 5%', xl: '5px 0'}}}>
 
         <Grid container spacing={2} >
           <Grid item xs={6} sx={{my: 1}}>

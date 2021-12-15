@@ -31,15 +31,15 @@ export const About: React.FC = () => {
       >
         {"Hi, I’m Lucas. Nice to meet you."}
       </Typography>
-      <Typography  align="center" sx={{ px: "25%", pb: '15%' }} >
+      <Typography  align="center" sx={{ px: {xs: "10%", md: '25%'}, pb: {xs: '25%', md: '15%'} }} >
         {
           "Since beginning my journey as a developer nearly 5 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one bug at a time."
         }
       </Typography>
 
       </Container>
-      <Grid container spacing={2} sx={{ position: 'sticky', mt: '-10%', px: 5}}>
-        <Grid item xs={4} sx={{display: 'flex'}}>
+      <Grid container spacing={{xs: 2, md: 2}} sx={{ position: 'sticky', mt: '-8vh !important', px: {xs: 1, md: 2}}}>
+        <Grid item xs={12} md={4} sx={{display: 'flex'}}>
           <Card  sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="div"
@@ -88,8 +88,8 @@ export const About: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4} sx={{display: 'flex'}}>
-          <Card sx={{display: 'flex', flexDirection: 'column'}}>
+        <Grid item xs={12} md={4} sx={{display: 'flex'}}>
+          <Card sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="i"
               sx={{
@@ -135,8 +135,8 @@ export const About: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4} sx={{display: 'flex'}}>
-          <Card sx={{display: 'flex', flexDirection: 'column'}}>
+        <Grid item xs={12} md={4} sx={{display: 'flex'}}>
+          <Card sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="i"
               sx={{
@@ -149,7 +149,7 @@ export const About: React.FC = () => {
             >
               <FaMobileAlt color="#153d65" />
             </CardMedia>
-            <CardContent sx={{display: 'flex', flexDirection: 'column', justifyContent:"space-between", height: "100%"}}>
+            <CardContent sx={{display: 'flex', flexDirection: 'column', justifyContent:"space-between", height: "100%", width: '100%'}}>
             <Container sx={{px: '0 !important', mb: '5rem'}}> 
             
               <Typography
