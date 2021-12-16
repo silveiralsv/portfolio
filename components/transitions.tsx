@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { easing, Slide, useScrollTrigger } from "@mui/material";
+import { easing, Slide, useScrollTrigger, Zoom } from "@mui/material";
 
 export function HideOnScroll(props : any) {
   const { children } = props;
@@ -26,6 +26,17 @@ export const ShowOnScroll: React.FC  = ({children}) => {
     <Slide direction="down" in={trigger} easing={{enter:easing.easeIn }} exit={false} > 
       {children as any}
     </Slide>
+)
+}
+export const ScrollOn: React.FC  = ({children}) => {
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 300
+  });
+  return (
+    <Zoom  in={trigger}  style={{transitionDelay: '300ms'}} > 
+      {children as any}
+    </Zoom>
 )
 }
 

@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { FaMobileAlt, FaNode, FaReact } from "react-icons/fa";
-import { ShowOnScroll } from "../transitions";
+import { ScrollOn, ShowOnScroll } from "../transitions";
 
 export const About: React.FC = () => {
   return (
@@ -40,6 +40,7 @@ export const About: React.FC = () => {
       </Container>
       <Grid container spacing={{xs: 2, md: 2}} sx={{ position: 'sticky', mt: '-8vh !important', px: {xs: 1, md: 2}}}>
         <Grid item xs={12} md={4} sx={{display: 'flex'}}>
+        <ScrollOn >
           <Card  sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="div"
@@ -87,8 +88,11 @@ export const About: React.FC = () => {
             </Container>
             </CardContent>
           </Card>
+          </ScrollOn >
         </Grid>
         <Grid item xs={12} md={4} sx={{display: 'flex'}}>
+        <ScrollOn >
+
           <Card sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="i"
@@ -99,7 +103,7 @@ export const About: React.FC = () => {
                 alignItems: "center",
                 "& svg": { height: "10rem", width: "10rem" },
               }}
-            >
+              >
               <FaNode color="#153d65" />
             </CardMedia>
             <CardContent sx={{display: 'flex', flexDirection: 'column', justifyContent:"space-between", height: "100%"}}>
@@ -111,7 +115,7 @@ export const About: React.FC = () => {
                 component="div"
                 fontWeight={800}
                 fontSize={"1.4rem"} 
-              >
+                >
                 Back-end
               </Typography>
               <Typography align="center"  component="div" >
@@ -125,7 +129,7 @@ export const About: React.FC = () => {
                 component="div"
                 fontWeight={800}
                 fontSize={"1.15rem"}
-              >
+                >
                 Technologies
               </Typography>
               <Typography align="center"  component="div"  >
@@ -134,8 +138,10 @@ export const About: React.FC = () => {
                 </Container>
             </CardContent>
           </Card>
+                </ScrollOn>
         </Grid>
         <Grid item xs={12} md={4} sx={{display: 'flex'}}>
+        <ScrollOn >
           <Card sx={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             <CardMedia
               component="i"
@@ -182,6 +188,8 @@ export const About: React.FC = () => {
                 </Container>
             </CardContent>
           </Card>
+          
+</ScrollOn>
         </Grid>
       </Grid>
     
