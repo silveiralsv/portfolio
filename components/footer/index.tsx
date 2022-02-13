@@ -9,6 +9,8 @@ import { SiTypescript } from "react-icons/si";
 export const Footer: React.FC = () => {
   return (
     <Container
+
+    className="snap-start"
       sx={{
         display: "flex",
         flexDirection: "column",

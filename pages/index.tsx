@@ -7,11 +7,18 @@ import { Projects } from '../components/projectCard'
 
 const Home: NextPage = () => {
   return (
-    <main >
+    <main className='max-h-screen bg-black text-slate-100 scroll-smooth font-sans snap snap-y overflow-y-scroll snap-mandatory'>
+      
       <HomeSection />
+
+      
       <About />
-      <Projects/>
-      <Footer/>
+
+      
+
+      
+
+
     </main>
   )
 }
