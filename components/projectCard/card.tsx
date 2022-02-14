@@ -21,7 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <Card sx={{ maxWidth: 345, cursor: 'pointer', backgroundColor: '#153d65' }} >
         {image && (
           
-          <Image src={image} height={240}/>
+          <Image src={image} height={240} />
           
         )}
 
