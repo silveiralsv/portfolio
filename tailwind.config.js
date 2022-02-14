@@ -5,27 +5,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyFrames: {
-        'hide-y': {
-          from: {
-            transform: 'translateY(-100%)',
+      keyframes: {
+        unfold: {
+          '0%': {
+            transform: 'scale(1)',
+            
           },
-          to: {
-            transform: 'translate-y-0',
-          }
-        },
-        showy: {
-          from: {
-            transform: 'translateY(100%)',
+          '100%': {
+            transform: 'scale(1)',
+            
           },
-          to: {
-            transform: 'translateY(0%)',
+          
+          '50%' : {
+            transform: 'scale(1.07)',
           },
-        },
       },
+    },
       animation: {
-        'hide-y': 'hide-y 1s linear',
-        showy: 'showy 0.5s ',
+        'bounce-slow': 'bounce 4s infinite',
+        'unfold-slow': 'unfold 7s  infinite',
       },
 
       colors: {

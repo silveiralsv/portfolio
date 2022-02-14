@@ -9,7 +9,7 @@ import { FiMail } from 'react-icons/fi';
 export const HomeSection: React.FC = () => {
   return (
   <div className="flex flex-col md:flex-row items-center justify-between p-8">
-    <span className='flex min-h-[50vh] max-h-[90vh]'>
+    <span className='flex min-h-[50vh] max-h-[90vh] animate-unfold-slow'>
       <Image src={home} alt='home' layout='intrinsic'/>
     </span>
 
