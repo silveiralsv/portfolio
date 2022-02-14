@@ -5,10 +5,10 @@ import { HomeSection } from '../components/home'
 const Home: NextPage = () => {
   return (
     <main className='h-screen max-h-screen scroll-smooth bg-black text-slate-100 font-sans snap snap-y overflow-y-scroll overflow-x-hidden snap-mandatory'>
-      <div className=" absolute inset-0 snap-start h-screen">
+      <div className="snap-start h-full">
         <HomeSection />
       </div>
-      <div className="absolute inset-0 snap-start h-screen">
+      <div className="snap-start h-full">
         <About />
       </div>
     </main>
