@@ -4,7 +4,7 @@ import { HomeSection } from '../components/home'
 
 const Home: NextPage = () => {
   return (
-    <main className='max-h-screen h-full mb:h-screen mb:max-h-screen scroll-smooth bg-black text-slate-100 font-sans snap snap-y overflow-y-scroll overflow-x-hidden snap-mandatory'>
+    <main className='max-h-full h-full mb:h-screen mb:max-h-screen scroll-smooth bg-black text-slate-100 font-sans snap snap-y overflow-y-scroll overflow-x-hidden snap-mandatory'>
       <div className="snap-center h-screen">
         <HomeSection />
       </div>
