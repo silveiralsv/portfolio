@@ -16,11 +16,11 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <main className='max-h-screen scroll-smooth bg-black text-slate-100 font-sans snap snap-y overflow-y-scroll overflow-x-hidden snap-mandatory'>
-      <div className="snap-start inset-0 h-screen">
+    <main className=' max-h-screen scroll-smooth bg-black text-slate-100 font-sans snap snap-y overflow-y-scroll overflow-x-hidden snap-mandatory'>
+      <div className="snap-start h-screen">
         <HomeSection />
       </div>
-      <div className="snap-start inset-0 h-screen">
+      <div className="snap-start h-screen">
         <About />
       </div>
     </main>

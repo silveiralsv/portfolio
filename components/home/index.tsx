@@ -8,13 +8,13 @@ import { FiMail } from 'react-icons/fi';
 
 export const HomeSection: React.FC = () => {
   return (
-  <div className="flex flex-col md:flex-row items-center justify-between p-8">
-    <span className='flex max-h-[90vh] animate-unfold-slow'>
+  <div className="flex flex-col lg:flex-row items-center p-8 h-full">
+    <div className='flex h-[50vh] lg:h-[90vh] animate-unfold-slow'>
       <Image src={home} alt='home' layout='intrinsic'/>
-    </span>
+    </div>
 
 
-    <span className=" grow text-center my-auto text-5xl text-gray-300">
+    <div className="text-center text-5xl text-gray-300 mx-auto my-auto ">
       {"Welcome, I am Lucas"}
       <p className='text-3xl'>
         <span className="mx-3 mt-5 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 relative inline-block">
@@ -30,7 +30,7 @@ export const HomeSection: React.FC = () => {
         <ContactBtn icon={<FiMail className='w-8 h-8 -skew-x-6' />} />
       </div>
 
-    </span>
+    </div>
 
 
   </div>
